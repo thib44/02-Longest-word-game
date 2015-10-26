@@ -1,0 +1,11 @@
+
+<h2>Here is your grid !</h2>
+
+<%= @grid %>
+<br/>
+<form action ="/score">
+  <input type="hidden" name = "start_time" value= <%= Time.now %> >
+  <input type="hidden" name="letters" value= <%= @letters %> >
+  <input type="text" name="attempt" placeholder="exemple 'Hello'">
+  <input type="submit">
+</form>
